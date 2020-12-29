@@ -41,7 +41,7 @@ color3 = ${xrdb:color1:#fff}
 
 [bar/bar]
 enable-ipc=true
-height = 25
+height = 30
 width = 100%
 bottom = true
 
@@ -322,4 +322,4 @@ margin-top = 0
 margin-bottom = 0
 
 ; vim:ft=dosini
-                      
+   
