@@ -33,6 +33,9 @@ exec --no-startup-id nm-applet
 # Start Polybar
 exec_always --no-startup-id sh ~/.config/polybar/launch.sh
 
+# Start Notification Daemon
+exec_always --no-startup-id dunst
+
 # Add gaps and shit
 gaps inner 10
 gaps outer 10
@@ -107,8 +110,11 @@ bindsym $mod+v split v
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
-# flameshot shit lol
+# default flameshot shit lol
 bindsym $mod+p exec flameshot gui
+
+# flameshot with image upload
+bindsym $mod+m exec /home/aesthetical/.config/i3/flameshot.sh
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
